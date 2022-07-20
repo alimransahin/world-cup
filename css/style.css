@@ -24,7 +24,7 @@ body{
     color: #fff;
 }
 .bg-dark{
-    background-color: #161616;
+    background-color: #211f27;
 }
 
 /* ----------
@@ -37,6 +37,22 @@ header{
     align-items:flex-end;
     margin-bottom: 130px;
     padding: 80px 0 0 80px;
+    transition: transform 1s;
+    animation: animation 5s ease-in-out 0.5s infinite alternate;
+    animation-play-state:running;
+}
+.buttona{
+    transition: transform .5s ease-in;
+    display: inline-block;
+}
+header:hover .buttona {
+    transform: scale(1.2) rotate(360deg);
+}
+header p, header h1{
+    transition: transform .5s ease-in;
+}
+header:hover p, header:hover h1{
+    transform: scale(1.1);
 }
 header .text, header .image{
     width: 50%;
@@ -58,6 +74,10 @@ header .image{
 }
 header img{
     width: 100%;
+    margin-bottom: -7px;
+}
+header .image1{
+
 }
 .btn{
     text-decoration: none;
@@ -189,9 +209,13 @@ main{
     flex-direction: column;
     padding: 20px;
     padding-bottom: 0;
-
     margin-bottom: 50px;
     border-radius: 10px;
+   }
+   header p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
    }
    header .text, header .image{
     width: 100%;
@@ -218,4 +242,19 @@ main{
   .footer-menu ul li{
     text-align: center;
   }
+}
+
+/* ------------------
+      animation 
+--------------------*/
+@keyframes animation {
+    0% {
+        background-color: #372222;
+    }
+    50% {
+        background: #223725;
+    }
+    100% {
+        background-color: #222337;
+    }
 }
