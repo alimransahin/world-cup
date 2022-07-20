@@ -1,0 +1,36 @@
+/*-------------------
+    Blog main page
+---------------------*/
+.card-body {
+    margin: 20px;
+}
+
+.card-body .btn {
+    margin-bottom: 20px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: #161616;
+    padding: 3px 20px;
+}
+.card-img img {
+    width: 100%;
+}
+.card-body h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    color: rgba(22, 22, 22, 0.7);
+    font-size: 16px;
+}
+
+.card-footer .time {
+    margin-right: 30px;
+}
+
+.card-footer .fa-regular {
+    padding-right: 10px;
+}

@@ -1,0 +1,28 @@
+/*-------------------
+  Blog schedule page
+---------------------*/
+article{
+    padding: 50px 30px;
+    text-align: center;
+}
+.card-img {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 2fr;
+    margin-bottom: 20px;
+}
+.card-img img {
+    width: 100%;
+}
+.card-img h2{
+    font-size: 16px;
+}
+.card-title{
+    color: #161616;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.time{
+    font-size: 16px;
+    color: #4D4D4D;
+}
