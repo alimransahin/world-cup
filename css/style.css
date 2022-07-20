@@ -41,11 +41,11 @@ header{
     animation: animation 5s ease-in-out 0.5s infinite alternate;
     animation-play-state:running;
 }
-.buttona{
+.banner-button{
     transition: transform .5s ease-in;
     display: inline-block;
 }
-header:hover .buttona {
+header:hover .banner-button {
     transform: scale(1.2) rotate(360deg);
 }
 header p, header h1{
@@ -249,12 +249,15 @@ main{
 --------------------*/
 @keyframes animation {
     0% {
-        background-color: #372222;
+        background-color:#003c38;
     }
-    50% {
-        background: #223725;
+    40% {
+        background: #00153c
+    }
+    60% {
+        background: #280036
     }
     100% {
-        background-color: #222337;
+        background-color: #2f4f4f;
     }
 }
