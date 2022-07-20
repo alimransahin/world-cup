@@ -101,7 +101,10 @@ aside ul li a{
     padding: 17px 0;
     display: block;
 }
-.bg-red a{
+aside .bg-red{
+    border: none;
+}
+aside .bg-red a{
     color: #fff;
 }
 
@@ -177,8 +180,8 @@ footer ul{
 footer a{
     text-decoration: none;
     color: #B9B9B9;
-    padding: 15px;
-    margin: 15px;
+    padding: 1vw;
+    margin: 1vw;
     display: inline-block;
 }
 .social{
@@ -208,5 +211,39 @@ main{
   }
   .more{
     display: block;
+  }
+}
+
+@media only screen and (max-width:576px) {
+   header{
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+   }
+   header .text, header .image{
+    width: 100%;
+   } 
+
+   main{
+    grid-template-columns: repeat(1, 1fr);
+   }
+  aside ul {
+    background: #fff !important;
+  }
+  aside ul li{
+    margin-top: 0;
+  }
+  .blog{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer{
+    padding: 30px;
+  }
+  .footer-menu ul{
+    flex-direction: column;
+  }
+  .footer-menu ul li{
+    text-align: center;
   }
 }
